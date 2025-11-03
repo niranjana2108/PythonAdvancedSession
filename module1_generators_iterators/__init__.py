@@ -1,0 +1,7 @@
+# module1_generators_iterators/__init__.py
+
+from .iterables_iterators import show_iterable_example, show_iterator_example
+from .custom_iterator import run_custom_iterator
+from .generator_examples import run_generators
+from .generator_expressions import run_generator_expression
+from .performance_comparison import compare_list_vs_generator
