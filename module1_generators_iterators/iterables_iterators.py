@@ -18,3 +18,5 @@ def show_iterator_example():
     print(next(it))
     # Uncomment below to see StopIteration error
     # print(next(it))
+
+show_iterable_example()
