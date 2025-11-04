@@ -8,7 +8,7 @@ Topics:
 • Iteration protocol behind loops
 """
 
-from yield_examples import yield_from_example
+from yield_examples import yield_from_example,simple_generator
 from infinite_generators import infinite_counter
 from send_example import echo_generator
 from generator_pipelines import numbers, square, cube
@@ -27,6 +27,9 @@ def demo_iteration_protocol():
 if __name__ == "__main__":
     print("=== DAY 02: Generators & Iteration Protocols ===")
 
+    print("=== Simple Generator Example ===")
+    for val in simple_generator():
+        print(val)
     yield_from_example()
     demo_iteration_protocol()
 
