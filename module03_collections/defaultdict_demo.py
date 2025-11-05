@@ -9,3 +9,14 @@ class DefaultDictDemo:
         print("Grouped Logs:")
         for level, messages in log_dict.items():
             print(f"{level}: {messages}")
+
+        grades = defaultdict(list)
+        grades['math'].append(95)
+        grades['science'].append(88)
+        grades['english'].append(92)
+        print(grades)
+
+
+if __name__ == "__main__":
+    print("\n=== DefaultDict Demo ===")
+    DefaultDictDemo().demo()

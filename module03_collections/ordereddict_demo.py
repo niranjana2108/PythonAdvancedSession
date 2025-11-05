@@ -10,3 +10,7 @@ class OrderedDictDemo:
         print("Ordered Configuration:")
         for key, value in config.items():
             print(f"{key}: {value}")
+
+if __name__ == "__main__":
+    print("\n=== OrderedDict Demo ===")
+    OrderedDictDemo().demo()

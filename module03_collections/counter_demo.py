@@ -6,3 +6,7 @@ class CounterDemo:
         word_count = Counter(words)
         print("Word Frequency:", word_count)
         print("Most common:", word_count.most_common(2))
+
+if __name__ == "__main__":
+    print("\n=== Counter Demo ===")
+    CounterDemo().demo()
