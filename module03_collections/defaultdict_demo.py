@@ -14,6 +14,7 @@ class DefaultDictDemo:
         grades['math'].append(95)
         grades['science'].append(88)
         grades['english'].append(92)
+        print(grades['social'])
         print(grades)
 
 
