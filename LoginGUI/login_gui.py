@@ -10,7 +10,7 @@ def login_action():
         messagebox.showwarning("Validation Error", "Username and Password cannot be empty")
         return
 
-    if username == "admin" and password == "1234":
+    if username == "admin" and password == "1234": #hard coding
         messagebox.showinfo("Login Success", "Welcome Admin!")
         username_var.set("")
         password_var.set("")
@@ -29,7 +29,7 @@ username_var = tk.StringVar()
 password_var = tk.StringVar()
 
 # Widgets
-tk.Label(root, text="Username:").grid(row=0, column=0, padx=10, pady=10, sticky="w")
+tk.Label(root, text="Username:").grid(row=0, column=0, padx=10, pady=10, sticky="e")
 tk.Entry(root, textvariable=username_var).grid(row=0, column=1, pady=10)
 
 tk.Label(root, text="Password:").grid(row=1, column=0, padx=10, pady=10, sticky="w")
